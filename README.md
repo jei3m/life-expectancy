@@ -9,16 +9,37 @@ Note: The Month and Day of the dataset are all January 1 for a more accurate com
 
 ## Dataset Snapshot
 The following table shows a snapshot of the dataset used in this project:
- >Date: Represents the date born.
- >SPDYNLE00INUSA: Represents the life expectancy.
+ -Date: Represents the date born.
+ -SPDYNLE00INUSA: Represents the life expectancy.
+
+## Summary of Findings
+As the years past, life expectancy is slowly getting lower. There might be some years that life expectancy increase but there is a continues trend of it going down.
 
 ## Data Preprocessing
 In the Data Preprocessing first the data was checked for null values, on the Year column it was changed to only the year since the values of the month and day are the same. Which is why only the year is reflected in the Year column.
 
+## Exploratory Data Analysis
+The following Graphs are based from the given dataset:
+
+![alt text](assets/graph.png)
+Here above you can see that in the early years life expectancy was slowly rising with a few minor dips, but in the recent years life expectancy had a major decline but is now slowly increasing again.
+
+![alt text](assets/Matrix.png)
+Here in the correlation matrix it is seen that the year you are born there is a huge correlation to your life expectancy. Which can be attributed to the customs and lifestyle of that year which affects the life span of a person.
+
+![alt text](assets/Distribution.png)
+Here is the distribution count of the number of person their maximum life expectancy from the dataset.
+
+Below is the graph based from the prediction of the model:
+
+![alt text](assets/Prediction.png)
+
+Above it is predicted that life expectancy will increase for a few years but then will suffer a major decline, this shows that the current lifestyles of the people in the 21st century is leading to a lower life expectancy.
+
 ## Model Development
 To predict life expectancy, we utelized four models: Linear Regression (with polynomial features), Decision Tree, Random Forest, and Support Vector Regressor. The data was standardized, and models were trained to capture life expectancy trends. Performance was evaluated using MSE and R² metrics to compare each model’s predictive accuracy. This approach ensured a balance between model complexity and accuracy in capturing the trend.
-## Model Evaluation
 
+## Model Evaluation
 The table below shows the evaluation of the models
 
 | Model Name            |   MSE  |   R2   |
